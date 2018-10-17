@@ -1,0 +1,413 @@
+	
+	/* LOGIN*/
+	input[type=text], input[type=password], input[type=email] {
+			width: 100%;
+			padding: 6px 10px;
+			margin: 4px 0;
+			display: inline-block;
+			border: 1px solid #ccc;
+			box-sizing: border-box;
+			border-radius: 5px;
+		}
+
+		/* Set a style for all buttons */
+		.btn-login{
+			background-color: #4CAF50;
+			color: white;
+			padding: 6px 9px;
+			margin: 4px 0;
+			border: none;
+			border-radius: 10px;
+			cursor: pointer;
+			width: 100%;
+		}
+		.btn-reg{
+			background-color: #4CAF50;
+			color: white;
+			padding: 6px 9px;
+			margin-left: 20px;
+			border: none;
+			border-radius: 10px;
+			cursor: pointer;
+			width: 35%;
+			
+		}
+
+		/* Center the image and position the close button */
+		.modal-header {
+			text-align: center;
+			margin: 8px 0 4px 0;
+			position: relative;
+			border-bottom: 1px solid gray;
+		}
+		/* The Close Button (x) */
+		.close {
+			position: absolute;
+			right: 25px;
+			top: 0;
+			color: #000;
+			font-size: 35px;
+			font-weight: bold;
+		}
+
+		.modal-body {
+			margin: 5px;
+		}
+
+		/* The Modal (background) */
+		.modal {
+			display: none; /* Hidden by default */
+			position: fixed; 
+			z-index: 1;
+			left: 0;
+			top: 0;
+			width: 100%; 
+			height: 100%;
+			overflow: auto; 
+			background-color: rgb(0,0,0); 
+			background-color: rgba(0,0,0,0.4); 
+			padding-top: 60px;
+		}
+		/*Chỉnh css trước khi thông báo lỗi trong form đăng nhập*/
+		#announce, #announce1 {
+			color: red;
+			text-align: center;
+			display: none;
+			margin-right: 10px;
+		}
+
+		/* Modal Content/Box */
+		.modal-content {
+			margin:0% auto 10% auto;
+			border: 1px solid #888;
+			width: 30%;
+			height: 98%;
+		}
+		@media screen and (max-width: 768px) {
+			.modal-content {
+				width:90%;
+				height: 100%;
+			}
+			.carousel-indicators {
+				display: none;
+			}
+			.btn_search {
+	 		 	 margin-top:10px !important;
+	 		 }
+		}
+		
+		/* Add Zoom Animation */
+		.animate {
+			-webkit-animation: animatezoom 0.6s;
+			animation: animatezoom 0.6s
+		}
+
+		@-webkit-keyframes animatezoom {
+			from {-webkit-transform: scale(0)} 
+			to {-webkit-transform: scale(1)}
+		}
+			
+		@keyframes animatezoom {
+			from {transform: scale(0)} 
+			to {transform: scale(1)}
+		}
+	/* Các thay đổi trong phần khung*/
+	.container-fluid {
+		  padding: 20px 50px;
+	  }
+	
+	 /* Các thay đổi trong phần button*/
+	.font-family {
+		  font-family: Helvetica, Arial;
+	  }
+	.bg-grey {
+		  background-color: #f6f6f6;
+		}
+	.btn-all {
+		   color: #fff !important;
+		   background-color: #1ECBF4 !important;
+		   padding: 15px;
+	 }
+    .col-sm-4 {
+			text-align: center;
+		}
+	
+	/* Tablet */
+	@media screen and (max-width: 768px) {
+			 .navbar li {
+		 	 	font-size: 8px !important;
+		 	 }
+		 	 .btn-primary {
+		 	 	font-size: 9px !important;
+		 	 }
+		 	 .btn-danger{
+		 	 	font-size: 9px !important;
+		 	 }
+		 	 .btn-info {
+		 	 	font-size: 9px !important;
+		 	 }
+		 	 .col-sm-4 {
+				text-align: center; 
+				margin: 10px 0;
+			}
+			.thumbnail {
+				font-size: 10px;
+			}
+			.title {
+				font-size: 15px !important;
+			}
+			.content {
+				font-size: 12px !important;
+			}
+			.contact_inf {
+				font-size: 12px !important;
+			}
+			
+			.container-fluid {
+		  		padding: 5px 35px;
+	  		}
+	 
+		 	 .btn-lg {
+		 	 	font-size: 13px !important;
+		 	 }
+		 	 .btn-all {
+		 	 	font-size: 13px !important;
+		 	 }
+		 	 .khoangcach {
+		 	 	display: none;
+		 	 }
+		 	 .content_input {
+		 	 	font-size: 12px !important;
+		 	 }
+	}
+
+	.company{
+		color: #666666;
+		
+	}
+	/*Set when change desktop, tablet to phone*/
+    @media screen and (max-width: 480px) {
+			.col-sm-4 {
+				text-align: center; 
+				margin: 25px 0;
+			}
+			.row {
+				font-size: 15px;
+			}
+			.title {
+				font-size: 20px !important;
+			}
+			.content {
+				font-size: 15px !important;
+			}
+			.contact_inf {
+				font-size: 12px !important;
+			}
+			
+			.container-fluid {
+		  		padding: 5px 25px;
+	  		}
+	  		
+		 	 .btn-lg {
+		 	 	font-size: 13px !important;
+		 	 }
+		 	 .btn-all {
+		 	 	font-size: 13px !important;
+		 	 }
+		 	 .khoangcach {
+		 	 	display: none;
+		 	 }
+		 	 .content_input {
+		 	 	font-size: 13px !important;
+		 	 }
+		 	 .an_hien {
+				display: block;
+			}
+			.btn_dslop {
+				margin: 5px;
+			}
+			
+	}
+	 /* Các thay đổi trong phần image*/
+	.logo2{
+			   color: #1ECBF4;
+		  }
+	
+	  .img-responsive {
+		  display: inline !important;
+	 }
+	  /* Các thay đổi trong phần thanh tuy chon navbar */
+	.navbar {
+		 margin-bottom: 0;
+		 background-color: #1ECBF4;
+		 z-index: 9999;
+		 border: 0; 
+		 font-size: 12px !important;
+		 line-height: 1.42857143 !important;
+		 letter-spacing:4px;
+		 border-radius: 0;
+		 font-family: Roboto, sans-serif;
+	 }
+	 .navbar-box{
+			width: 20%;
+		}
+	 .navbar-log {
+		 margin-top: 8px;
+		 margin-left: 10px;
+	 }
+	  @media screen and (max-width: 768px) {
+			.navbar-log {
+				 margin-top: 8px;
+				margin-left: 10px;
+				margin-bottom: 15px;
+			}
+		}
+	.navbar li a, .navbar .navbar-brand {
+		 color: #fff !important;
+	 }
+	 
+	.navbar-nav li a:hover, .navbar-nav li.active a {
+		 color: #1ECBF4 !important;
+		 background-color: #fff !important;
+	 }
+	 
+	.navbar-default .navbar-toggle 
+	 {
+		 border-color: transparent;
+		 color: #fff !important;
+	 }
+	 
+	 /* Các thay đổi trong phần animation*/
+	.slideanim {visibility:hidden}
+	.slide {
+		 animation-name: slide;
+		 -webkit-animation-name: slide;
+		 animation-duration: 1s;
+		 -webkit-animation-duration: 1s;
+		 visibility: visible;
+	 }
+	@keyframes slide {
+		 0% {
+			 opacity: 0;
+			 transform: translateY(70%);
+		 }
+	 	 100% {
+			 opacity: 1;
+			 transform: translateY(0%);
+		 }
+	 }
+    @-webkit-keyframes slide {
+		 0% {
+			 opacity: 0;
+			 -webkit-transform: translateY(70%);
+		 }
+	 	 100% {
+			 opacity: 1;
+			 -webkit-transform: translateY(0%);
+		 }
+	 }
+	
+	  /* Các thay đổi trong phần cac nhân viên */
+	a:hover {
+		  text-decoration: none;
+	  }
+	.footer {
+		  border-top: 1px solid gray;
+	  }
+	.panel {
+		  border: 1px solid #1ECBF4;
+		  border-radius: 0 !important;
+		  transition: box-shadow 0.5s; 
+	  }
+	.panel:hover {
+		  box-shadow: 5px 0px 40px rgba(0,0,0,.7);
+	  }
+	.panel-footer .btn:hover {
+		  border: 1px solid #1ECBF4;
+		  background-color: #fff !important;
+		  color: #1ECBF4;
+	  }
+	.panel-heading {
+		  color: #fff !important;
+		  background-color: #1ECBF4 !important;
+		  padding: 10px;
+		  border-bottom: 1px solid transparent;
+		  border-top-left-radius: 0px;
+		  border-top-right-radius: 0px;
+		  border-bottom-left-radius: 0px;
+		  border-bottom-right-radius: 0px;
+	  }
+	.panel-footer {
+		  background-color: #fff !important;
+	  }
+	
+	  .panel-footer p {
+		  font-size: 13px;
+	  }
+	.panel-footer .btn {
+		  margin: 15px 0;
+		  background-color: #1ECBF4;
+		  color: #fff;
+	  }
+	.row {
+		  margin-right: 25px;
+		  margin-left: 25px;
+	  }
+	  .col-sm-8 {
+	  	text-align: justify;
+	  }
+/*KẾT THÚC TRANG CHỦ */
+
+/*BẮT ĐẦU TRANG CÁ NHÂN*/
+.NameAccount  {
+    clear: both;
+	background: green;
+	width: 100%;
+	text-align: left;
+	padding: 10px !important;
+	font-size: 13pt;
+	font-weight: bold;
+	color: #fff !important;
+}
+.Menu {
+	list-style: none;
+        padding: 20px 0;
+	font-size: 18px;
+}
+.Menu li a:hover {
+    color: #1ECBF4 !important;
+		}
+		#list-one {
+			 color: white !important;
+			 background-color: #cddc39 !important;
+		}
+		.list-group-item {
+			background-color: #f9f9f9 !important;
+			border: 0;
+		}
+		.Menu a {
+			color: #17aa1c;
+		}
+		.titleInfo {
+			text-align: center;
+			font-size: 30px;
+			background-color: #f9f9f9 ;
+		}
+		.form-control {
+			margin: 0 !important;
+		}
+		/*BẮT ĐẦU TRANG ĐỔI MẬT KHẨU*/
+		.inform .col-sm-4 {
+			text-align: left !important;
+		}
+		#contact {
+			background-color: #f0f0f0 !important;
+		}
+		/* kí hợp đồng */
+		.inf_course {
+			padding: 25px;
+			border: solid 1px gray;
+			border-radius: 10px;
+			background-image: url("image/nen.jpg");
+			color: #00ff2d;
+                }
